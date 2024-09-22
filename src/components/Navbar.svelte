@@ -8,10 +8,9 @@
         <h1>Bryce McWhirter</h1>
     </div>
     <div class="flex flex-row justify-end gap-32">
-        <h2>About</h2>
-        <h2>Blog</h2>
-        <h2>Developer</h2>
-        <h2>Music</h2>
-
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/developer">Developer</a>
+        <a href="/music">Music</a>
     </div>
 </div>
