@@ -21,7 +21,7 @@ import MyCardComponent from "../components/MyCardComponent.svelte";
         <slot /> <!-- your content is injected here -->
     </article>
     <div class="col-span-1">
-        <MyCardComponent />
+        <MyCardComponent client:visible/>
     </div>
 </div>
 
