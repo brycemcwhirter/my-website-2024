@@ -6,11 +6,18 @@ const { frontmatter } = Astro.props;
 ---
 
 <MySiteLayout>
-    <article class="prose p-10">
-        <h1>{frontmatter.title} </h1>
-        <h2>{frontmatter.authors}</h2>
-        <h3>{frontmatter.description}</h3>
-        <slot />
-        <p>Written on: {frontmatter.date}</p>
+    <article class="prose-xl p-10">
+        <div class="border">
+            <h1>{frontmatter.title} </h1>
+            <h4>{frontmatter.description}</h4>
+        </div>
+        <div>
+            <slot />
+            <p>Written on: {frontmatter.date}</p>
+        </div>
+
+
+
+
     </article>
 </MySiteLayout>
