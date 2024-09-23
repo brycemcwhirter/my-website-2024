@@ -1,0 +1,16 @@
+---
+// 1. The frontmatter prop gives access to frontmatter and other data
+
+import MySiteLayout from "./MySiteLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<MySiteLayout>
+    <article class="prose p-10">
+        <h1>{frontmatter.title} </h1>
+        <h2>{frontmatter.authors}</h2>
+        <h3>{frontmatter.description}</h3>
+        <slot />
+        <p>Written on: {frontmatter.date}</p>
+    </article>
+</MySiteLayout>

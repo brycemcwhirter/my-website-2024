@@ -2,6 +2,9 @@
 const { title } = Astro.props;
 import Navbar from "../components/Navbar.svelte";
 import MyCardComponent from "../components/MyCardComponent.svelte";
+
+// temp blog link for testing
+// http://localhost:4321/blog/2024/26things
 ---
 <html lang="en">
 <head>
@@ -14,7 +17,7 @@ import MyCardComponent from "../components/MyCardComponent.svelte";
 <Navbar/>
 </div>
 <div class="grid grid-cols-4 min-h-screen border-t-2">
-    <article class="col-span-3">
+    <article class="col-span-3 border-r-4">
         <slot /> <!-- your content is injected here -->
     </article>
     <div class="col-span-1">

@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 space-y-16 place-items-center p-10 border-l-4">
+<div class="grid grid-cols-1 space-y-16 place-items-center p-10">
 <!--    profile picture-->
     <div class="avatar">
         <div class="w-64 rounded-full">
@@ -20,7 +20,7 @@
 <!--    email input-->
 
     <div>
-        <iframe src="https://brycemcwhirter.substack.com/embed"></iframe>
+        <iframe title="substack" src="https://brycemcwhirter.substack.com/embed"></iframe>
     </div>
 
 <!--    contact info hi@brycemcwhirter.com-->
