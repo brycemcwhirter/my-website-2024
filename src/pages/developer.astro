@@ -1,8 +1,10 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
 import BlockLayout from "../layouts/BlockLayout.svelte"
+let description = "Lorem ipsum odor amet, consectetuer adipiscing elit. Sagittis eget vehicula dui dui proin eget. Turpis nibh vestibulum tristique; mattis senectus tempus justo placerat." +
+    "\n";
 ---
 
 <MySiteLayout title="Developer">
-    <BlockLayout pageType="Developer"/>
+    <BlockLayout pageType="Developer" {description}/>
 </MySiteLayout>

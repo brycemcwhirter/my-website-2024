@@ -10,11 +10,11 @@ import MyCardComponent from "../components/MyCardComponent.svelte";
     <title>Bryce McWhirter {title}</title>
 </head>
 <body>
-<div class="border h-8">
+<div >
 <Navbar/>
 </div>
-<div class="grid grid-cols-4 border min-h-screen">
-    <article class="border col-span-3">
+<div class="grid grid-cols-4 min-h-screen border-t-2">
+    <article class="col-span-3">
         <slot /> <!-- your content is injected here -->
     </article>
     <div class="col-span-1">

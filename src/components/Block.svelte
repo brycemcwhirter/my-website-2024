@@ -3,7 +3,7 @@ export let color = "";
 </script>
 
 <div>
-    <div class="card bg-base-100 w-80 shadow-xl justify-center">
+    <div class="card bg-blue-900 w-72 shadow-xl justify-center">
         <figure>
             <img
                     src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
