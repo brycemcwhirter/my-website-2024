@@ -1,0 +1,19 @@
+hello:
+  label: Hello
+  permalink: /hello
+  description: For my first post :)
+
+christianity:
+  label: Christianity
+  permalink: /christianity
+  description: Christianity tag description
+
+personal:
+  label: Personal
+  permalink: /personal
+  description: Anything related to my life that I want to share.
+
+small-idea:
+  label: Small Idea
+  permalink: /small-idea
+  description: Small Ideas that I found useful.
