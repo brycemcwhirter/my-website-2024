@@ -2,7 +2,7 @@
 <!--    profile picture-->
     <div class="avatar">
         <div class="w-64 rounded-full">
-            <img alt="Bryce McWhirter's Head Shot" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            <img alt="Bryce McWhirter's Head Shot" src="/profilePicture.jpg" />
         </div>
     </div>
 
@@ -20,7 +20,7 @@
 <!--    email input-->
 
     <div>
-        <iframe title="substack" src="https://brycemcwhirter.substack.com/embed"></iframe>
+        <iframe class="w-auto" title="substack" src="https://brycemcwhirter.substack.com/embed"></iframe>
     </div>
 
 <!--    contact info hi@brycemcwhirter.com-->
