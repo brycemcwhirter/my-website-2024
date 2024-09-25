@@ -1,7 +1,8 @@
 <script>
     import Block from "../components/Block.svelte";
 
-    let colors = ['Red', 'Green', 'Blue', 'Orange', 'Yellow', 'Purple', 'Orange', 'Orange'];
+
+    import testData from '../data/data.json';
 
 
     export let pageType;
@@ -14,8 +15,8 @@
 
 <div class="p-4 flex items-center justify-center">
     <div class="grid grid-cols-3  lg:gap-16 2xl:gap-72">
-        {#each colors as color}
-            <Block {color}/>
+        {#each testData as entry}
+            <Block {entry}/>
         {/each}
     </div>
 </div>
