@@ -26,7 +26,15 @@ const projects = [
         "alt": "A blue folder",
         "description": "",
         "extLink": "https://www.dropbox.com/scl/fi/9e364cjvufgup3lddifkp/NYCLove.wav?rlkey=a5gd23iukcrm9glex34nd737f&st=rrfpcj2u&dl=0"
+    },
+    {
+        "title": "theGarden2.wav",
+        "imgLink": "/images/music/folder.jpg",
+        "alt": "A blue folder",
+        "description": "",
+        "extLink": "https://www.dropbox.com/scl/fi/rqquge9erxvcs3qfvd8zg/theGarden2.wav?rlkey=chf2uqeteilq3x89gkazwpind&st=1ntpu9wp&dl=0"
     }
+
 
 
 ];

@@ -8,14 +8,14 @@
 
 <!--    brief bio (1-2 sentenences)-->
     <div>
-        <p class="text-justify">Bryce McWhirter is a software developer in DFW. He is an avid music listener,
-            an average web developer, and is still trying to get his theology right.</p>
+        <p class="text-justify">Hey! I'm a software developer based in the DFW area. My interest include web development, music, and theology.
+        </p>
     </div>
 
 <!--    CTA Subscribe to my newsletter/-->
 <div>
-    <h1 class="font-bold text-lg">Subscribe to My News Letter</h1>
-    <p class="text-justify">I send a weekly newsletter highlighting new things. Once a week and never blowing up your inbox.</p>
+    <h1 class="font-bold text-lg">Subscribe To My Newsletter</h1>
+    <p class="text-justify">I send a weekly newsletter highlighting 10 new things that I've discovered. Once a week and never blowing up your inbox.</p>
 </div>
 <!--    email input-->
 
@@ -25,7 +25,7 @@
 
 <!--    contact info hi@brycemcwhirter.com-->
     <div>
-        <h1 class="font-bold text-md">Say Hello Anytime!</h1>
+        <h1 class="font-bold text-lg">Say Hello Anytime!</h1>
         <p class="text-justify">hi@brycemcwhirter.com</p>
     </div>
 
