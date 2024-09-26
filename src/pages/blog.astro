@@ -1,9 +1,19 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
-import BlockLayout from "../layouts/BlockLayout.svelte"
+import { getCollection } from 'astro:content';
+const blogEntries = await getCollection('blog');
 
 ---
 
 <MySiteLayout title="Blog">
-    Custom Blog Layout Here
+    <ul>
+        {blogEntries.map(blogPostEntry => (
+                <li>
+                    <a href={`/blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
+                    <!--<time datetime={blogPostEntry.data.publishedDate.toISOString()}>-->
+                    <!--    {blogPostEntry.data.publishedDate.toDateString()}-->
+                    <!--</time>-->
+                </li>
+        ))}
+    </ul>
 </MySiteLayout>

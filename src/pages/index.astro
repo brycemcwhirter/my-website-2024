@@ -1,5 +1,12 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
+import {getCollection} from "astro:content";
+
+const publishedBlogEntries = await getCollection('blog', ({ data }) => {
+	return data.draft !== true;
+});
+
+console.log(publishedBlogEntries);
 ---
 
 <MySiteLayout title="Home">
