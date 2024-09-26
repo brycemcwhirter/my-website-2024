@@ -1,12 +1,15 @@
 <script>
+    export let projects;
+    export let pageType;
+    export let description;
+    export let buttonMessage;
+
+
+
     import Block from "../components/Block.svelte";
 
 
-    import testData from '../data/data.json';
 
-
-    export let pageType;
-    export let description;
 </script>
 
 <div class="p-4 space-y-6">
@@ -15,8 +18,8 @@
 
 <div class="p-4 flex items-center justify-center">
     <div class="grid grid-cols-3  lg:gap-16 2xl:gap-72">
-        {#each testData as entry}
-            <Block {entry}/>
+        {#each projects as entry}
+            <Block {entry} {buttonMessage}/>
         {/each}
     </div>
 </div>

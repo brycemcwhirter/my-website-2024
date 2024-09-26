@@ -1,12 +1,14 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
 import BlockLayout from "../layouts/BlockLayout.svelte"
-let description = "Lorem ipsum odor amet, consectetuer adipiscing elit. Sagittis eget vehicula dui dui proin eget. Turpis nibh vestibulum tristique; mattis senectus tempus justo placerat." +
+let description = "For more insights in my work as a software developer, please see my Github @brycemcwhirter" +
     "\n";
 let pageType = "Developer";
+let buttonMessage = "See Repository"
 
+import projects from '../data/developer_projects'
 ---
 
 <MySiteLayout title="Developer">
-    <BlockLayout {pageType} {description}/>
+    <BlockLayout {pageType} {description} {projects} {buttonMessage}/>
 </MySiteLayout>
