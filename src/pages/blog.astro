@@ -1,19 +1,26 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
 import { getCollection } from 'astro:content';
+
 const blogEntries = await getCollection('blog');
 
 ---
 
 <MySiteLayout title="Blog">
-    <ul>
-        {blogEntries.map(blogPostEntry => (
-                <li>
-                    <a href={`/blog/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
-                    <!--<time datetime={blogPostEntry.data.publishedDate.toISOString()}>-->
-                    <!--    {blogPostEntry.data.publishedDate.toDateString()}-->
-                    <!--</time>-->
-                </li>
-        ))}
-    </ul>
+
+
+    <div class="p-4">
+        <h1 class="text-4xl font-bold">Blog</h1>
+        <p class="text-xl">description </p>
+        <ul>
+            {blogEntries.map(blogPostEntry => (
+                    <li>
+                        <a href={`/posts/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
+                        <!--<time datetime={blogPostEntry.data.publishedDate.toISOString()}>-->
+                        <!--    {blogPostEntry.data.publishedDate.toDateString()}-->
+                        <!--</time>-->
+                    </li>
+            ))}
+        </ul>
+    </div>
 </MySiteLayout>
