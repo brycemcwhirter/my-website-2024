@@ -1,6 +1,7 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
 import {getCollection} from "astro:content";
+import {SUBTITLE} from "../data/constants";
 
 const publishedBlogEntries = await getCollection('blog', ({ data }) => {
 	return data.draft !== true;
@@ -10,5 +11,8 @@ console.log(publishedBlogEntries);
 ---
 
 <MySiteLayout title="Home">
-	<h1>Latest Blog Posts Here!</h1>
+	<div class="p-10 space-y-6">
+		<h1 class="text-6xl font-bold">Hey! I'm Bryce</h1>
+		<p class="font-bold text-3xl">{SUBTITLE}</p>
+	</div>
 </MySiteLayout>

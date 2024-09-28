@@ -1,7 +1,52 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
+import { SUBTITLE } from "../data/constants"
 ---
 
 <MySiteLayout title="Blog">
-    <p>Custom About Page</p>
+
+    <div class="p-4 space-y-3">
+        <div class="space-y-3">
+            <h1 class="font-bold text-4xl">About Me</h1>
+        </div>
+        <div>
+            <h1>headshot here</h1>
+            <p class="font-bold text-lg">{SUBTITLE}</p>
+        </div>
+        <div>
+            <p>Gallery Here</p>
+        </div>
+        <article class="prose-2xl">
+            <div>
+                <h3>FAQ</h3>
+                <ul class="list-none pl-5">
+                    <li>
+                        <p><strong>From:</strong> Plains, TX</p>
+                    </li>
+                    <li>
+                        <p><strong>Living:</strong> DFW</p>
+                    </li>
+                    <li>
+                        <p><strong>Education:</strong> B. of Science, Computer Science, Minor in Entrepreneurship, Baylor University</p>
+                    </li>
+                    <li>
+                        <p><strong>Favorite Genres of Music:</strong> Yes</p>
+                    </li>
+                    <li>
+                        <p><strong>Spotify or Apple Music:</strong> Apple Music</p>
+                    </li>
+                    <li>
+                        <p><strong>Favorite Web Technologies:</strong> Svelte, Astro, PHP</p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+    </div>
+
+
+
+
+
+
 </MySiteLayout>

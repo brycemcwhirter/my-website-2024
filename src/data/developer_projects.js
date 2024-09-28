@@ -1,13 +1,13 @@
 const projects = [
     {
-        "title": "blog.brycemcwhirter.com",
+        "title": "blog.brycemcwhirter.com (V1)",
         "imgLink": "/images/developer/write.jpg",
         "alt": "A pen on paper",
         "description": "My initial home for my blog. This blog was built utilizing Docusaurus, a modern static site generator, and was hosted on GitHub Pages.",
         "extLink": "https://github.com/brycemcwhirter/my-blog"
     },
     {
-        "title": "brycemcwhirter.com",
+        "title": "brycemcwhirter.com (V1)",
         "imgLink": "/images/developer/portfolio.jpg",
         "alt": "a desktop with two monitors opened to an IDE",
         "description": "My first web portfolio which showcased a collection of my software development projects, built using modern technologies such as Svelte.js for the front-end, Tailwind CSS for styling, and deployed with continuous integration and deployment tools like GitHub Actions and Netlify.",

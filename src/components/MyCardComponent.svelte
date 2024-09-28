@@ -1,3 +1,7 @@
+<script>
+    import {NAME, SUBTITLE} from "../data/constants.js";
+</script>
+
 <div class="grid grid-cols-1 space-y-16 place-items-center p-10">
 <!--    profile picture-->
     <div class="avatar">
@@ -7,15 +11,15 @@
     </div>
 
 <!--    brief bio (1-2 sentenences)-->
-    <div>
-        <p class="text-justify">Hey! I'm a software developer based in the DFW area. My interest include web development, music, and theology.
-        </p>
+    <div class="text-justify">
+        <h1 class="text-2xl text-center font-bold">{NAME}</h1>
+        <p >{SUBTITLE} Learn more about me <a class="text-primary font-bold" href="/about">here</a></p>
     </div>
 
 <!--    CTA Subscribe to my newsletter/-->
-<div>
-    <h1 class="font-bold text-lg">Subscribe To My Newsletter</h1>
-    <p class="text-justify">I send a weekly newsletter highlighting 10 new things that I've discovered. Once a week and never blowing up your inbox.</p>
+<div class="text-justify">
+    <h1 class="font-bold text-xl text-center">Subscribe To My Newsletter</h1>
+    <p >I send a weekly newsletter where I share what I'm working on along with 5 interesting things. </p>
 </div>
 <!--    email input-->
 
@@ -24,8 +28,8 @@
     </div>
 
 <!--    contact info hi@brycemcwhirter.com-->
-    <div>
-        <h1 class="font-bold text-lg">Say Hello Anytime!</h1>
+    <div class="text-justify">
+        <h1 class="font-bold text-xl">Say Hello Anytime!</h1>
         <p class="text-justify">hi@brycemcwhirter.com</p>
     </div>
 
