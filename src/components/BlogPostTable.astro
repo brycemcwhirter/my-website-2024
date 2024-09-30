@@ -1,6 +1,10 @@
 ---
 import {getCollection} from "astro:content";
+import {LINK_STYLE} from "../data/constants"
+
 const blogEntries = await getCollection('blog');
+
+
 ---
 <table class="table-auto border-spacing-10 border-separate w-full">
     <thead>
@@ -14,7 +18,7 @@ const blogEntries = await getCollection('blog');
     {blogEntries.map(blogPostEntry => (
             <tr>
                 <td>
-                    <a class="text-xl hover:text-primary" href={`/posts/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
+                    <a class={LINK_STYLE + " text-xl"} href={`/posts/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
                 </td>
                 <td>
                     <time class="text-xl" datetime={blogPostEntry.data.publishedDate}>
