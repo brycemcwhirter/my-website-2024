@@ -1,5 +1,5 @@
 <script>
-    import {NAME, SUBTITLE} from "../data/constants.js";
+    import {NAME, SUBTITLE, NEWSLETTER_MSG} from "../data/constants.js";
 </script>
 
 <div class="grid grid-cols-1 space-y-16 place-items-center p-10">
@@ -19,7 +19,7 @@
 <!--    CTA Subscribe to my newsletter/-->
 <div class="text-justify">
     <h1 class="font-bold text-xl text-center">Subscribe To My Newsletter</h1>
-    <p >I send a weekly newsletter where I share what I'm working on along with 5 interesting things. </p>
+    <p >{NEWSLETTER_MSG}</p>
 </div>
 <!--    email input-->
 
@@ -27,11 +27,11 @@
         <iframe class="w-auto" title="substack" src="https://brycemcwhirter.substack.com/embed"></iframe>
     </div>
 
-<!--    contact info hi@brycemcwhirter.com-->
-    <div class="text-justify">
-        <h1 class="font-bold text-xl">Say Hello Anytime!</h1>
-        <p class="text-justify">hi@brycemcwhirter.com</p>
-    </div>
+<!--&lt;!&ndash;    contact info hi@brycemcwhirter.com&ndash;&gt;-->
+<!--    <div class="text-justify">-->
+<!--        <h1 class="font-bold text-xl">Say Hello Anytime!</h1>-->
+<!--        <p class="text-justify">hi@brycemcwhirter.com</p>-->
+<!--    </div>-->
 
 
 </div>

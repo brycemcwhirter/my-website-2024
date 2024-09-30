@@ -1,18 +1,57 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
-import {getCollection} from "astro:content";
-import {SUBTITLE} from "../data/constants";
+import {NEWSLETTER_MSG, SUBTITLE} from "../data/constants";
+import BlogPostTable from "../components/BlogPostTable.astro";
 
-const publishedBlogEntries = await getCollection('blog', ({ data }) => {
-	return data.draft !== true;
-});
+const headerStyle = 'text-3xl font-semibold text-center';
 
-console.log(publishedBlogEntries);
+const softwareMusicStyle = "text-center space-y-6";
+const softwareMusicButton = "btn btn-primary";
+const softwareMusicList = "list-none list-inside space-y-4";
+
 ---
 
 <MySiteLayout title="Home">
-	<div class="p-10 space-y-6">
-		<h1 class="text-6xl font-bold">Hey! I'm Bryce</h1>
-		<p class="font-bold text-3xl">{SUBTITLE}</p>
+	<div class="p-10 space-y-8">
+		<!--Header-->
+		<div class="space-y-3">
+			<h1 class="text-6xl font-bold text-center">Hey! I'm Bryce</h1>
+			<p class="font-semibold text-4xl text-center">{SUBTITLE}</p>
+		</div>
+
+		<!--Software Dev Music Cards-->
+		<div class="grid grid-cols-2">
+			<div class={softwareMusicStyle}>
+				<p class={headerStyle}>Software Developer</p>
+				<div>
+					<ul class={softwareMusicList}>
+						<li><strong>Coding Languages</strong>👨🏼‍💻: JavaScript, PHP, Java, HTML/CSS</li>
+						<li><strong>Frameworks 🖼️</strong>: Svelte.js, Tailwind CSS, Astro, </li>
+						<li><strong>Highlighted Project</strong>: This Website</li>
+					</ul>
+				</div>
+				<button class={softwareMusicButton}>Dev Work</button>
+
+			</div>
+			<div class={softwareMusicStyle}>
+				<p class={headerStyle}>Musician</p>
+				<div>
+					<ul class={softwareMusicList}>
+						<li><strong>DAW</strong> 🖥️: Ableton Live</li>
+						<li><strong>Gear</strong> 🎹: Yamaha MX88, Komplete Kontrol, Maschine Mikro, </li>
+						<li><strong>Highlighted Project</strong>: This Song</li>
+					</ul>
+				</div>
+				<button class={softwareMusicButton}>Music Work</button>
+			</div>
+		</div>
+
+		<!--Most Recent Blog Post-->
+		<div class="p-10">
+			<p class={headerStyle}>Most Recent Blog Posts</p>
+			<BlogPostTable />
+		</div>
+
+
 	</div>
 </MySiteLayout>

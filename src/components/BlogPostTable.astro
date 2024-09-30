@@ -1,0 +1,29 @@
+---
+import {getCollection} from "astro:content";
+const blogEntries = await getCollection('blog');
+---
+<table class="table-auto border-spacing-10 border-separate w-full">
+    <thead>
+    <tr>
+        <th class="text-2xl text-left">Title</th>
+        <th class="text-2xl text-left">Published Date</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {blogEntries.map(blogPostEntry => (
+            <tr>
+                <td>
+                    <a class="text-xl hover:text-primary" href={`/posts/${blogPostEntry.slug}`}>{blogPostEntry.data.title}</a>
+                </td>
+                <td>
+                    <time class="text-xl" datetime={blogPostEntry.data.publishedDate}>
+                        {blogPostEntry.data.publishedDate}
+                    </time>
+                </td>
+
+            </tr>
+    ))}
+
+    </tbody>
+</table>
