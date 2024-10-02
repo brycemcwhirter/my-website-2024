@@ -1,6 +1,7 @@
 ---
 import MySiteLayout from "../layouts/MySiteLayout.astro"
 import {LINK_STYLE, SUBTITLE} from "../data/constants"
+import PhotoCarousel from "../components/PhotoCarousel.astro";
 
 const bioStyle = "text-lg"
 const headerStyle = "text-center font-semibold";
@@ -10,23 +11,22 @@ const headerStyle = "text-center font-semibold";
 
     <div class="p-4 space-y-3">
 
-        <div class="text-center ">
-            <h1>headshot here</h1>
-            <p class="font-bold text-lg">{SUBTITLE}</p>
+        <div class="text-center space-y-2">
+            <img alt="Headshot of Bryce McWhirter" src="/images/headshotTest.jpg" class="mx-auto">
+            <p class="font-bold text-xl">{SUBTITLE}</p>
         </div>
         <div class="text-justify space-y-3">
-            <p class={bioStyle}>I'm a software developer based in the DFW area. My coding journey began back in 2017 when I was first learning to write programs for a ti-84 calculator. Ever since then, I've gained experience utilizing a wide array of tools and technologies, some of which were utilized to build this website. You can see my projects that I'm currently and haved worked on my clicking the developer tab.</p>
+            <p class={bioStyle}>I’m a software developer based in the DFW area, and my coding journey started back in 2017 when I first learned to write programs on a TI-84 calculator. Since then, I’ve gained experience with a variety of tools and technologies, some of which I used to build this site. Check out the Developer tab to see the projects I’m currently working on and those I’ve completed.</p>
 
-            <p class={bioStyle}>I'm a music producer who's played piano for about 20 years. What started from piano lessons in kindergarten has blossomed into gigs across Texas playing for a variety of venues. I'm currently working on making my own music. You can see my current portfolio under the Music tab.</p>
+            <p class={bioStyle}>I’m a music producer with about 20 years of piano experience. What started with lessons in kindergarten has led to gigs across Texas, playing at various venues. Right now, I’m focused on making my own music. You can check out my current portfolio under the Music tab.</p>
 
             <p class={bioStyle + " text-center"}>The Best Way to Stay in Touch is to subscribe to my <a href="https://brycemcwhirter.substack.com" target="_blank" class={LINK_STYLE}>newsletter</a></p>
 
+            <p class={bioStyle + " text-center"}>The Best Way to Reach Me is sending me an email at hi@brycemcwhirter.com</p>
         </div>
 
         <!--Photo Gallery-->
-        <div>
-            <p>Gallery Here</p>
-        </div>
+        <PhotoCarousel />
 
         <article class="prose-lg text-center">
             <div>
