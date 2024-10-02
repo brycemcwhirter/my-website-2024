@@ -3,6 +3,7 @@ import MySiteLayout from "../layouts/MySiteLayout.astro"
 import {LINK_STYLE, SUBTITLE} from "../data/constants"
 
 const bioStyle = "text-lg"
+const headerStyle = "text-center font-semibold";
 ---
 
 <MySiteLayout title="Blog">
@@ -27,10 +28,9 @@ const bioStyle = "text-lg"
             <p>Gallery Here</p>
         </div>
 
-        <!--FAQ-->
-        <article class="prose-lg">
+        <article class="prose-lg text-center">
             <div>
-                <h3>FAQ</h3>
+                <h3 class={headerStyle}>FAQ</h3>
                 <ul class="list-none pl-5">
                     <li>
                         <p><strong>From:</strong> Plains, TX</p>
@@ -54,32 +54,38 @@ const bioStyle = "text-lg"
             </div>
         </article>
 
-        <!--Links-->
-        <article class="prose-lg">
-            <div>
-                <h3>Cool Links</h3>
-                <ul class="list-none pl-5">
-                    <li>
-                        <p><strong>From:</strong> Plains, TX</p>
-                    </li>
-                    <li>
-                        <p><strong>Living:</strong> DFW</p>
-                    </li>
-                    <li>
-                        <p><strong>Education:</strong> B. of Science, Computer Science, Minor in Entrepreneurship, Baylor University</p>
-                    </li>
-                    <li>
-                        <p><strong>Favorite Genres of Music:</strong> Yes</p>
-                    </li>
-                    <li>
-                        <p><strong>Spotify or Apple Music:</strong> Apple Music</p>
-                    </li>
-                    <li>
-                        <p><strong>Favorite Web Technologies:</strong> Svelte, Astro, PHP</p>
-                    </li>
-                </ul>
-            </div>
-        </article>
+        <!--<div class="flex">-->
+        <!--    &lt;!&ndash;FAQ&ndash;&gt;-->
+
+
+        <!--    &lt;!&ndash;Links&ndash;&gt;-->
+        <!--    &lt;!&ndash;<article class="prose-lg">&ndash;&gt;-->
+        <!--    &lt;!&ndash;    <div>&ndash;&gt;-->
+        <!--    &lt;!&ndash;        <h3 class={headerStyle}>Cool Links</h3>&ndash;&gt;-->
+        <!--    &lt;!&ndash;        <ul class="list-none pl-5">&ndash;&gt;-->
+        <!--    &lt;!&ndash;            <li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;                <p><strong>From:</strong> Plains, TX</p>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            </li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            <li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;                <p><strong>Living:</strong> DFW</p>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            </li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            <li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;                <p><strong>Education:</strong> B. of Science, Computer Science, Minor in Entrepreneurship, Baylor University</p>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            </li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            <li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;                <p><strong>Favorite Genres of Music:</strong> Yes</p>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            </li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            <li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;                <p><strong>Spotify or Apple Music:</strong> Apple Music</p>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            </li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            <li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;                <p><strong>Favorite Web Technologies:</strong> Svelte, Astro, PHP</p>&ndash;&gt;-->
+        <!--    &lt;!&ndash;            </li>&ndash;&gt;-->
+        <!--    &lt;!&ndash;        </ul>&ndash;&gt;-->
+        <!--    &lt;!&ndash;    </div>&ndash;&gt;-->
+        <!--    &lt;!&ndash;</article>&ndash;&gt;-->
+        <!--</div>-->
+
     </div>
 
 
