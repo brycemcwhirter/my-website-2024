@@ -11,6 +11,7 @@ const blogEntries = await getCollection('blog');
     <tr>
         <th class="text-2xl text-left">Title</th>
         <th class="text-2xl text-left">Published Date</th>
+        <th class="text-2xl text-left">Tags</th>
     </tr>
     </thead>
     <tbody>
@@ -24,6 +25,9 @@ const blogEntries = await getCollection('blog');
                     <time class="text-xl" datetime={blogPostEntry.data.publishedDate}>
                         {blogPostEntry.data.publishedDate}
                     </time>
+                </td>
+                <td>
+                    {blogPostEntry.data.tags}
                 </td>
 
             </tr>

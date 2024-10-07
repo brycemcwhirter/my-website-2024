@@ -9,7 +9,7 @@
 
     </div>
     <div class="flex-none">
-        <a class="btn btn-ghost text-xl" href="/about">About</a>
+<!--        <a class="btn btn-ghost text-xl" href="/about">About</a>-->
         <a class="btn btn-ghost text-xl" href="/blog">Blog</a>
         <a class="btn btn-ghost text-xl" href="/developer">Developer</a>
         <a class="btn btn-ghost text-xl" href="/music">Music</a>

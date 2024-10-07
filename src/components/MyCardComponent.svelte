@@ -13,7 +13,7 @@
 <!--    brief bio (1-2 sentenences)-->
     <div class="text-justify">
         <h1 class="text-2xl text-center font-bold">{NAME}</h1>
-        <p >{SUBTITLE} Learn more about me <a class="text-primary font-bold" href="/about">here</a></p>
+        <p >{SUBTITLE} </p>
     </div>
 
 <!--    CTA Subscribe to my newsletter/-->
